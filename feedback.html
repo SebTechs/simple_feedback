@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Feedback Page</title>
+        <link rel="icon" href = "/photos/DSCN8918-4.jpg">
+        <link rel="stylesheet" href="/css/main.css">
+        <meta charset="UTF-8">
+        <meta name="description" content = "Yes I have a webstie">
+        <meta name="author" content="SebTechs">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="form_design.css">
+    </head>
+    <body>
+        <!-- Beggining of form and end of navigation -->
+        <div class ="workingarea">
+            <div class = "feedback-area">
+            <div class = "center">
+                <h2>Feedback</h2>
+                
+            </div>
+            <p>Welcome to the feedback page this is the area where you will submit feedback. To further help develop the website to it's best potensial. Any and all feedback is appricated.</p>
+            <p><b>Fields that have a <b class = "required">*</b> are required.</b></p>
+            <hr>
+            <form method = "post">
+                <!-- name -->
+                <label>Name: <b class = "required">*</b></label>
+                <br>
+                <input type = "text" required placeholder="Your name..." name = "name">
+                <!-- Email -->
+                <br>
+                <label>Email: <b class = "required">*</b></label>
+                <br>
+                <input type = "email" required placeholder="Your email address..." name = "email">
+                <!-- Feedback -->
+                <br>
+                <label>Feedback / Improvements: <b class = "required">*</b></label>
+                <br>
+                <textarea required placeholder="Feedback / improvements that could be made..." name = "feedback"></textarea>
+                <!-- Review / 10 -->
+                <br>
+                <label>Rate the website on a scale of 1-10: <b class = "required">*</b></label>
+                <br>
+                <input type = "range" min="1" max="10" step="1" value="5" required name = "scale">
+                <br>
+                <!-- Submit and reset buttons -->
+                <div class = "center">
+                <input class = "sub-res-buttons" type = "submit" value="Submit">
+                <input class = "sub-res-buttons" type = "reset" value="Reset">
+                </div>
+            </form>
+        </div>
+        </div>
+        <!-- End of form and begging of footer.-->
+</body>
+</html>
